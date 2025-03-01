@@ -21,7 +21,7 @@ public class Main {
 
 
         System.out.println("Задача 3");
-        for (int i = 0; i <= 10; i += 2) {
+        for (int i = 0; i <= 17; i += 2) {
             System.out.print(i + " ");
         }
         System.out.println(" ");
@@ -77,13 +77,13 @@ public class Main {
         System.out.println(" ");
 
 
-        System.out.println("Задача 9");
-        int monthlyDeposit1 = 29000;
-        int monthlySum1 = 0;
+        System.out.println("Задача 8");
+        float monthlyDeposit1 = 29000F;
+        float monthlySum1 = 0F;
         for (int i = 1; i <= 12; i++) {
-            monthlySum1 = monthlySum1 + monthlySum1 / 100;
             monthlySum1 = monthlySum1 + monthlyDeposit1;
-            System.out.println("Сумма вклада за " + i + "-ый  месяц равна " + monthlySum1 + " рублей");
+            monthlySum1 = (float) (monthlySum1 + (monthlySum1 * 0.01));
+            System.out.println("Сумма вклада за " + i + "-ый месяц равна " + monthlySum1 + " рублей");
         }
         System.out.println(" ");
         System.out.println("____");
